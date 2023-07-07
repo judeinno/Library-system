@@ -2,25 +2,45 @@ package business;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-
-import dataaccess.DataAccess;
-import dataaccess.DataAccessFacade;
+import static java.time.LocalDate.now;
 
 final public class LibraryMember extends Person implements Serializable {
 	private String memberId;
+	private List<CheckoutRecord> checkoutRecords;
 	
 	public LibraryMember(String memberId, String fname, String lname, String tel,Address add) {
 		super(fname,lname, tel, add);
-		this.memberId = memberId;		
+		this.memberId = memberId;
+		this.checkoutRecords = new ArrayList<>();
 	}
-	
-	
+
+	public void addCheckoutRecord(CheckoutRecord record){
+		this.checkoutRecords.add(record);
+	}
+
 	public String getMemberId() {
 		return memberId;
 	}
 
-	
+	public List<CheckoutRecord> getCheckoutRecords() {
+		return Collections.unmodifiableList(checkoutRecords);
+	}
+
+	public void checkout(BookCopy copy, LocalDate checkoutDate, LocalDate dueDate) {
+		copy.changeAvailability();
+		CheckoutEntry entry = new CheckoutEntry(copy, checkoutDate, dueDate);
+		CheckoutRecord checkoutRecord = new CheckoutRecord(this, List.of(entry));
+//        checkoutRecord.addEntry(entry);
+		this.addCheckoutRecord(checkoutRecord);
+	}
+
+	public void checkout(BookCopy copy, int maxCheckoutLength) {
+		checkout(copy, now(), now().plusDays(maxCheckoutLength));
+	}
 	
 	@Override
 	public String toString() {
