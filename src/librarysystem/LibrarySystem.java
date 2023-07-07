@@ -13,7 +13,9 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JOptionPane;
 
 import business.ControllerInterface;
 import business.SystemController;
@@ -22,10 +24,13 @@ import business.SystemController;
 public class LibrarySystem extends JFrame implements LibWindow {
 	ControllerInterface ci = new SystemController();
 	public final static LibrarySystem INSTANCE =new LibrarySystem();
+	private final String LIBRARIAN = "Librarian";
+	private final String ADMINISTRATOR = "Administrator";
 	JPanel mainPanel;
 	JMenuBar menuBar;
+	JMenu menuLibrarian, menuAdministrator;
     JMenu options;
-    JMenuItem login, allBookIds, allMemberIds; 
+    JMenuItem login, allBookIds, allMemberIds, checkoutBooks, addBooks, createNewMember, editMember; 
     String pathToImage;
     private boolean isInitialized = false;
     
@@ -83,16 +88,38 @@ public class LibrarySystem extends JFrame implements LibWindow {
     private void addMenuItems(JMenuBar menuBar) {
     	// Create and add the menus 
        login = new JMenuItem("Login");
+       menuLibrarian = new JMenu(LIBRARIAN); 
+       checkoutBooks = new JMenuItem("Checkout Books");
+     
+	   menuAdministrator = new JMenu(ADMINISTRATOR); 
+	   addBooks = new JMenuItem("Add Books");
+       createNewMember = new JMenuItem("Create New Member");
+       editMember = new JMenuItem("Edit Member");
        allBookIds = new JMenuItem("All Book Ids");
        allMemberIds = new JMenuItem("All Member Ids");
        
        menuBar.add(login);
- 	   menuBar.add(allBookIds);
- 	   menuBar.add(allMemberIds);
+       menuBar.add(menuLibrarian);
+       menuLibrarian.add(checkoutBooks);
+       
+	   menuBar.add(menuAdministrator);
+	   menuAdministrator.add(addBooks);
+	   menuAdministrator.add(createNewMember);
+	   menuAdministrator.add(editMember);
+       menuAdministrator.add(allBookIds);
+       menuAdministrator.add(allMemberIds);
+ 	   
  	   
  	   login.addActionListener(new LoginListener());
+ 	   
+ 	   // Admin events
+ 	   addBooks.addActionListener(new AddBooksListener());
+ 	   createNewMember.addActionListener(new CreateNewMemberListener());
+ 	   editMember.addActionListener(new EditMemberListener());
  	   allBookIds.addActionListener(new AllBookIdsListener());
  	   allMemberIds.addActionListener(new AllMemberIdsListener());
+ 	  // Librarian events
+ 	   checkoutBooks.addActionListener(new CheckoutBooksListener());
     }
     
     class LoginListener implements ActionListener {
@@ -159,6 +186,43 @@ public class LibrarySystem extends JFrame implements LibWindow {
 			
 			
 		}
+    	
+    }
+    
+    class AddBooksListener implements ActionListener {
+
+    	@Override
+		public void actionPerformed(ActionEvent e) {
+    		System.out.println("Add Books - Add listener ");
+			
+		}
+    	
+    }
+    class CreateNewMemberListener implements ActionListener {
+    	
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		System.out.println("Create New Member - Add listener ");
+    		
+    	}
+    	
+    }
+    class EditMemberListener implements ActionListener {
+    	
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		System.out.println("Edit Member - Add listener ");
+    		
+    	}
+    	
+    }
+    class CheckoutBooksListener implements ActionListener {
+    	
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		System.out.println("Check out Books - Add listener");
+    		
+    	}
     	
     }
 
