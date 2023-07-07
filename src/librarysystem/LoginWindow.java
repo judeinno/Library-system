@@ -17,7 +17,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JOptionPane;
 
 import business.ControllerInterface;
-
+import business.LoginException;
 import business.SystemController;
 
 
@@ -76,7 +76,7 @@ public class LoginWindow extends JFrame implements LibWindow {
     		getContentPane().add(mainPanel);
     		isInitialized(true);
     		pack();
-    		//setSize(660, 500);
+    		setSize(660, 500);
 
     	
     }
@@ -97,14 +97,14 @@ public class LoginWindow extends JFrame implements LibWindow {
     		middleHalf.setLayout(new BorderLayout());
     		JSeparator s = new JSeparator();
     		s.setOrientation(SwingConstants.HORIZONTAL);
-    		//middleHalf.add(Box.createRigidArea(new Dimension(0,50)));
+    		middleHalf.add(Box.createRigidArea(new Dimension(0,50)));
     		middleHalf.add(s, BorderLayout.SOUTH);
     		
     	}
     	private void defineLowerHalf() {
 
     		lowerHalf = new JPanel();
-    		lowerHalf.setLayout(new FlowLayout(FlowLayout.LEFT));
+    		lowerHalf.setLayout(new FlowLayout(FlowLayout.CENTER));
     		
     		JButton backButton = new JButton("<= Back to Main");
     		addBackButtonListener(backButton);
@@ -114,11 +114,11 @@ public class LoginWindow extends JFrame implements LibWindow {
     	private void defineTopPanel() {
     		topPanel = new JPanel();
     		JPanel intPanel = new JPanel(new BorderLayout());
-    		intPanel.add(Box.createRigidArea(new Dimension(0,20)), BorderLayout.NORTH);
+    		intPanel.add(Box.createRigidArea(new Dimension(0,100)), BorderLayout.NORTH);
     		JLabel loginLabel = new JLabel("Login");
     		Util.adjustLabelFont(loginLabel, Color.BLUE.darker(), true);
     		intPanel.add(loginLabel, BorderLayout.CENTER);
-    		topPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+    		topPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
     		topPanel.add(intPanel);
     		
     	}
@@ -127,7 +127,7 @@ public class LoginWindow extends JFrame implements LibWindow {
     	
     	private void defineMiddlePanel() {
     		middlePanel=new JPanel();
-    		middlePanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+    		middlePanel.setLayout(new FlowLayout(FlowLayout.CENTER));
     		defineLeftTextPanel();
     		defineRightTextPanel();
     		middlePanel.add(leftTextPanel);
@@ -162,8 +162,8 @@ public class LoginWindow extends JFrame implements LibWindow {
     		
     		JPanel topText = new JPanel();
     		JPanel bottomText = new JPanel();
-    		topText.setLayout(new FlowLayout(FlowLayout.LEFT,5,0));
-    		bottomText.setLayout(new FlowLayout(FlowLayout.LEFT,5,0));		
+    		topText.setLayout(new FlowLayout(FlowLayout.CENTER,5,0));
+    		bottomText.setLayout(new FlowLayout(FlowLayout.CENTER,5,0));		
     		
     		password = new JPasswordField(10);
     		label = new JLabel("Password");
@@ -186,8 +186,22 @@ public class LoginWindow extends JFrame implements LibWindow {
     	
     	private void addLoginButtonListener(JButton butn) {
     		butn.addActionListener(evt -> {
-    			JOptionPane.showMessageDialog(this,"Successful Login");
-    				
+            	String id = username.getText();
+            	String pwd = password.getText();
+    			System.out.println(pwd);
+            	
+            	
+            	SystemController control = new SystemController();
+            	try {
+					control.login(id, pwd);
+					System.out.println(SystemController.currentAuth);
+					JOptionPane.showMessageDialog(this,"Successful Login");
+				} catch (LoginException e) {
+					JOptionPane.showMessageDialog(LoginWindow.this,         									          
+					          e.getMessage(),
+					          "Error", 
+					          JOptionPane.ERROR_MESSAGE);
+				}			
     		});
     	}
 	
