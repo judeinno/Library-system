@@ -113,4 +113,19 @@ final public class Book implements Serializable {
 		return maxCheckoutLength;
 	}
 
+	public Integer getAvailableBooksLength() {
+		Integer count = 0;
+		if (copies == null) {
+			return 0;
+		}
+
+		for (BookCopy bookCopy : copies) {
+			if (bookCopy.isAvailable()) {
+				count += 1;
+			}
+		}
+
+		return count;
+	}
+
 }

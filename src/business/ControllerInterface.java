@@ -1,5 +1,6 @@
 package business;
 
+import java.util.Collection;
 import java.util.List;
 
 import business.Book;
@@ -10,6 +11,13 @@ public interface ControllerInterface {
 	public void login(String id, String password) throws LoginException;
 	public List<String> allMemberIds();
 	public List<String> allBookIds();
-	public boolean checkOutBook(String memberID, String isbn) throws LibrarySystemException;
-	
+	public void checkOutBook(String memberID, String isbn) throws LibrarySystemException;
+	public Collection<LibraryMember> alLibraryMembers();
+	public Collection<Book> allBooks();
+	public List<CheckoutHistory> getCheckoutHistory();
+	public Book getBookByISBN(String isbn);
+	public void deleteMember(String memberId);
+	LibraryMember getLibraryMemberById(String memberId);
+	void saveMember(LibraryMember member);
+	public void saveBook(Book book);
 }
