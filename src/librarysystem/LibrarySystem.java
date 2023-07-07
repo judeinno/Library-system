@@ -53,7 +53,7 @@ public class LibrarySystem extends JFrame implements LibWindow {
     	insertSplashImage();
 		
 		createMenus();
-		//pack();
+		pack();
 		setSize(660,500);
 		isInitialized = true;
     }
@@ -75,23 +75,24 @@ public class LibrarySystem extends JFrame implements LibWindow {
     }
     private void createMenus() {
     	menuBar = new JMenuBar();
-		menuBar.setBorder(BorderFactory.createRaisedBevelBorder());
-		addMenuItems();
+		menuBar.setBorder(BorderFactory.createSoftBevelBorder(NORMAL, Util.LINK_AVAILABLE, Util.DARK_BLUE));
+		addMenuItems(menuBar);
 		setJMenuBar(menuBar);		
     }
     
-    private void addMenuItems() {
-       options = new JMenu("Options");  
- 	   menuBar.add(options);
- 	   login = new JMenuItem("Login");
+    private void addMenuItems(JMenuBar menuBar) {
+    	// Create and add the menus 
+       login = new JMenuItem("Login");
+       allBookIds = new JMenuItem("All Book Ids");
+       allMemberIds = new JMenuItem("All Member Ids");
+       
+       menuBar.add(login);
+ 	   menuBar.add(allBookIds);
+ 	   menuBar.add(allMemberIds);
+ 	   
  	   login.addActionListener(new LoginListener());
- 	   allBookIds = new JMenuItem("All Book Ids");
  	   allBookIds.addActionListener(new AllBookIdsListener());
- 	   allMemberIds = new JMenuItem("All Member Ids");
  	   allMemberIds.addActionListener(new AllMemberIdsListener());
- 	   options.add(login);
- 	   options.add(allBookIds);
- 	   options.add(allMemberIds);
     }
     
     class LoginListener implements ActionListener {
@@ -122,7 +123,7 @@ public class LibrarySystem extends JFrame implements LibWindow {
 			System.out.println(sb.toString());
 			AllBookIdsWindow.INSTANCE.setData(sb.toString());
 			AllBookIdsWindow.INSTANCE.pack();
-			//AllBookIdsWindow.INSTANCE.setSize(660,500);
+			AllBookIdsWindow.INSTANCE.setSize(660,500);
 			Util.centerFrameOnDesktop(AllBookIdsWindow.INSTANCE);
 			AllBookIdsWindow.INSTANCE.setVisible(true);
 			
@@ -152,7 +153,7 @@ public class LibrarySystem extends JFrame implements LibWindow {
 			System.out.println(sb.toString());
 			AllMemberIdsWindow.INSTANCE.setData(sb.toString());
 			AllMemberIdsWindow.INSTANCE.pack();
-			//AllMemberIdsWindow.INSTANCE.setSize(660,500);
+			AllMemberIdsWindow.INSTANCE.setSize(660,500);
 			Util.centerFrameOnDesktop(AllMemberIdsWindow.INSTANCE);
 			AllMemberIdsWindow.INSTANCE.setVisible(true);
 			
