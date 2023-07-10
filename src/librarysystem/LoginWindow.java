@@ -191,29 +191,6 @@ public class LoginWindow extends JFrame implements LibWindow {
         });
     }
 
-//    	private void addLoginButtonListener(JButton butn) {
-//    		butn.addActionListener(evt -> {
-//            	String id = username.getText();
-//            	String pwd = password.getText();
-//    			System.out.println(pwd);
-//
-//
-//            	SystemController control = new SystemController();
-//            	try {
-//					control.login(id, pwd);
-//					LibrarySystem.hideAllWindows();
-//					LibrarySystem.restMenuItems();
-//					LibrarySystem.INSTANCE.setVisible(true);
-//					JOptionPane.showMessageDialog(this,"Successful Login");
-//				} catch (LoginException e) {
-//					JOptionPane.showMessageDialog(LoginWindow.this,
-//					          e.getMessage(),
-//					          "Error",
-//					          JOptionPane.ERROR_MESSAGE);
-//				}
-//    		});
-//    	}
-
     class AddLoginButtonListener implements ActionListener {
 
         @Override
@@ -222,9 +199,7 @@ public class LoginWindow extends JFrame implements LibWindow {
             String pwd = password.getText();
             System.out.println(pwd);
 
-//            if (id.isEmpty() || pwd.isEmpty()) {
-//                return;
-//            }
+
             SystemController control = new SystemController();
             try {
                 control.login(id, pwd);

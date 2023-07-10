@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8d235c-f465-4078-8556-f65cc96da8ac" name="Changes" comment="" />
+    <list default="true" id="aa8d235c-f465-4078-8556-f65cc96da8ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataaccess/storage/BOOKS" beforeDir="false" afterPath="$PROJECT_DIR$/dataaccess/storage/BOOKS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataaccess/storage/MEMBERS" beforeDir="false" afterPath="$PROJECT_DIR$/dataaccess/storage/MEMBERS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarysystem/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarysystem/LoginWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/storage/BOOKS" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/storage/BOOKS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/storage/MEMBERS" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/storage/MEMBERS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LoginWindow$AddLoginButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LoginWindow$AddLoginButtonListener.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,41 +90,6 @@
           <properties class="java.lang.NoSuchMethodError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/business/SystemController.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/librarysystem/LoginWindow.java</url>
-          <line>194</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/librarysystem/LoginWindow.java</url>
-          <line>195</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/librarysystem/LoginWindow.java</url>
-          <line>196</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/librarysystem/LoginWindow.java</url>
-          <line>220</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/librarysystem/LoginWindow.java</url>
-          <line>221</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/librarysystem/LoginWindow.java</url>
-          <line>222</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

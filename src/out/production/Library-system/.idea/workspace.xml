@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa8d235c-f465-4078-8556-f65cc96da8ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/business/CheckoutEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/CheckoutEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/CheckoutRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/CheckoutRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/ControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/ControllerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/LibraryMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/LibraryMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/SystemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/SystemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataaccess/DataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataaccess/DataAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataaccess/DataAccessFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataaccess/DataAccessFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataaccess/storage/MEMBERS" beforeDir="false" afterPath="$PROJECT_DIR$/dataaccess/storage/MEMBERS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/librarysystem/LibrarySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/librarysystem/LibrarySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/business/ControllerInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/business/ControllerInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/business/LibraryMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/business/LibraryMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/business/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/business/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/business/SystemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/business/SystemController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccessFacade$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccessFacade$Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccessFacade$StorageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccessFacade$StorageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccessFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/DataAccessFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/dataaccess/storage/MEMBERS" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/dataaccess/storage/MEMBERS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem$AllBookIdsListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem$AllBookIdsListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem$AllMemberIdsListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem$AllMemberIdsListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem$LoginListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem$LoginListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LibrarySystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LoginWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library-system/librarysystem/LoginWindow.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2SDJgKh4qOq3GiGp2AOv1Q83kdv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature1-login",
+    "last_opened_file_path": "/Users/lamepic/Desktop/Hub/github/general/Library-system/src",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="librarysystem.Main" />
+      <module name="Library-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="librarysystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa8d235c-f465-4078-8556-f65cc96da8ac" name="Changes" comment="" />
+      <created>1688675327268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688675327268</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchMethodError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
